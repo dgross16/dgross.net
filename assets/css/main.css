@@ -1,20 +1,20 @@
 @font-face {
     font-family:"akzidenz-grotesk";
-    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Bold.otf");
+    src:url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Bold.otf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family:"akzidenz-grotesk";
-    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Regular.otf");
+    src:url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Regular.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family:"akzidenz-grotesk";
-    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-It.otf");
+    src:url("../fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-It.otf");
     font-weight: normal;
     font-style: italic;
 }

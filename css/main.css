@@ -1,0 +1,115 @@
+@font-face {
+    font-family:"akzidenz-grotesk";
+    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"akzidenz-grotesk";
+    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"akzidenz-grotesk";
+    src:url("/static/fonts/Akzidenz-Grotesk/AkzidenzGroteskBE-It.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+:root {
+    --body-bg: #cecece;
+    --nav-bg: #606060;
+    --text-color: #0474BA;
+}
+
+html {
+    font-family:"akzidenz-grotesk", "Helvetica Neue", "Arial", sans-serif;
+
+}
+
+body {
+    margin: 0;
+    font-size: 20pt;
+    background: white;
+    color: var(--text-color);
+}
+
+
+.content {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stanza {
+    padding-top: 60px;
+    white-space: pre-line;
+    line-height: 150%;
+    font-size: 16pt;
+}
+
+.poem {
+    padding-bottom: 100px;
+    white-space: pre-line;
+    line-height: 150%;
+    font-size: 16pt;
+}
+
+.poem h3 {
+    padding-bottom: 150px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-bg);
+
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+.navbar li {
+    float: left;
+    font-weight: bold;
+}
+.navbar li:hover {
+    background: #000000;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+    padding: 12pt 1rem;
+    display: inline-block;
+    text-align: center;
+}
+@media (orientation: portrait) {
+    .content {
+        max-width: 90%;
+    }
+    
+    .poem {
+        font-size: 12pt;
+    }
+    .stanza {
+        font-size: 12pt;
+    }
+}

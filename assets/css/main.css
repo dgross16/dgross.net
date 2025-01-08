@@ -21,9 +21,10 @@
 
 
 :root {
-    --body-bg: #cecece;
+    --body-bg: white;
     --nav-bg: #606060;
-    --text-color: #0474BA;
+    --blue: #FBAA04;
+    --orange: #0455FB;
 }
 
 html {
@@ -34,21 +35,49 @@ html {
 body {
     margin: 0;
     font-size: 20pt;
-    background: white;
-    color: var(--text-color);
+    background: var(--body-bg);
+    color: var(--blue);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.content {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .cover {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 300px;
+    padding-right: 100px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+.cover h1 {
+    font-size: 72pt;
+    line-height: 0pt;
+}
+
+.covername {
+    color: blue;
+    opacity: 65%;
+    position: relative;
+    z-index: 9;
+    margin-bottom: -40px;
+}
+.covername2 {
+    color: orange;
+    opacity: 65%;
+    position: relative;
+    left: 48pt;
+}
+
+.links {
+    width: 300px;
+    padding-left: 52px;
+    padding-right: 48px;
+    position: relative;
 }
 
 .stanza {
@@ -73,37 +102,37 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--nav-bg);
-
-
 }
 
-.navbar ul {
+.links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 }
  
-.navbar li {
-    float: left;
+.links li {
     font-weight: bold;
+    padding: 10px;
 }
-.navbar li:hover {
-    background: #000000;
+.links li:hover {
+    color: var(--blue);
 }
 
 
-.navbar a {
-    color: white;
+.links a {
     text-decoration: none;
     font-size: 16pt;
-    padding: 12pt 1rem;
-    display: inline-block;
-    text-align: center;
 }
 @media (orientation: portrait) {
-    .content {
-        max-width: 90%;
+    .container {
+        flex-direction: column;
+    }
+    .cover {
+        padding-left: 52px;
+    }
+    .links {
     }
     
     .poem {

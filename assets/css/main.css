@@ -98,11 +98,6 @@ body {
     padding-bottom: 150px;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: var(--nav-bg);
-}
 
 .links ul {
     list-style-type: none;
@@ -116,14 +111,11 @@ nav {
     font-weight: bold;
     padding: 10px;
 }
-.links li:hover {
-    color: var(--blue);
-}
 
 
 .links a {
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 24pt;
 }
 @media (orientation: portrait) {
     .container {
@@ -131,8 +123,6 @@ nav {
     }
     .cover {
         padding-left: 52px;
-    }
-    .links {
     }
     
     .poem {

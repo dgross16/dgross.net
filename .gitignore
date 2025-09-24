@@ -1,7 +1,0 @@
-CNAME
-templates/*
-serve.py
-venv/*
-package.json
-package-lock.json
-node_modules/*

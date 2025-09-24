@@ -21,10 +21,10 @@
 
 
 :root {
-    --body-bg: white;
     --nav-bg: #606060;
-    --blue: #FBAA04;
-    --orange: #0455FB;
+    --orange: #FBAA04;
+    --blue: #0455FB;
+    --body-bg: var(--blue);
 }
 
 html {
@@ -36,12 +36,27 @@ body {
     margin: 0;
     font-size: 20pt;
     background: var(--body-bg);
-    color: var(--blue);
+    color: white;
+}
+.content {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24pt;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+.content h3 {
+    font-weight: bold;
+    font-size: 36pt;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .container {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 40vh;
     align-items: center;
     justify-content: center;
 }
@@ -60,15 +75,15 @@ body {
 }
 
 .covername {
-    color: blue;
-    opacity: 65%;
+    color: var(--orange);
+   /* opacity: 65%; */
     position: relative;
     z-index: 9;
     margin-bottom: -40px;
 }
 .covername2 {
-    color: orange;
-    opacity: 65%;
+    color: white;
+    /*opacity: 65%;*/
     position: relative;
     left: 48pt;
 }
@@ -116,10 +131,27 @@ body {
 .links a {
     text-decoration: none;
     font-size: 24pt;
+    color: white;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+.content li {
+    margin-bottom: 12pt;
+}
+a:hover {
+    color: orange;
 }
 @media (orientation: portrait) {
+    .content {
+        max-width: 85%;
+        font-size: 14pt;
+    }
     .container {
         flex-direction: column;
+        height: 70vh;
     }
     .cover {
         padding-left: 52px;

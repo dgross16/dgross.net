@@ -38,6 +38,7 @@ body {
     background: var(--body-bg);
     color: white;
 }
+
 .content {
     max-width: 70%;
     margin-left: auto;
@@ -53,6 +54,7 @@ body {
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -69,6 +71,7 @@ body {
     position: relative;
     bottom: 0px;
 }
+
 .cover h1 {
     font-size: 72pt;
     line-height: 0pt;
